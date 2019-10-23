@@ -6,7 +6,7 @@
           <img class="logo" src="../../assets/logo_white.svg" />
         </div>
       </el-col>
-      <el-col :span="12" :offset="4">
+      <el-col :span="10" :offset="6">
         <div class="grid-content bg-purple-light">
           <el-row class="menu">
             <el-col :span="6">
@@ -46,8 +46,16 @@ export default {
 };
 </script>
 <style >
+/* .body{
+  margin-top: 120px;
+} */
 .headerBar {
   background-image: linear-gradient(to right, #051146, #243a9c);
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; */
 }
 .header {
   height: 120px;
