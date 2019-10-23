@@ -17,9 +17,7 @@
       <el-row :gutter="12" class="productListBox">
         <el-col :span="8">
           <el-card shadow="hover" class="productListCard">
-            <p>Comodo Positive DV Single SSL</p>
-            <p>保护 www.钥.com 或 钥.com</p>
-            
+            <p class="productListBoxTitle">标准型DV SSL证书</p>
             <el-rate
               v-model="value"
               disabled
@@ -28,6 +26,14 @@
               void-icon-class="el-icon-lock"
               text-color="#ff9900"
             ></el-rate>
+            <p class="productListBoxInfo"><i class="el-icon-lock lock"></i>RSA & ECC双算法支持</p>
+            <p class="productListBoxInfo"><i class="el-icon-lock lock"></i>超快速在线验证域名解析记录,快速签发</p>
+            <p class="productListBoxInfo"><i class="el-icon-lock lock"></i>保护单条、多条或所有二级子域名，HTTPS域名</p>
+            <p class="productListBoxInfo"><i class="el-icon-lock lock"></i>全球信任，通用性广，在线自主管理，不限制服务器安装次数</p>
+            <p class="productListBoxInfo"><i class="el-icon-lock lock"></i>Linux、Mac、Windows、IOS、Android桌面和移动设备全球信任</p>
+
+
+            
 
           </el-card>
         </el-col>
@@ -95,5 +101,12 @@ export default {
 .productListCard {
   margin: 0 50px;
   text-align: left;
+}
+.productListBoxTitle{
+  text-align: center;
+  font-size: 17px;
+}
+.productListBoxInfo{
+  font-size: 12px;
 }
 </style>

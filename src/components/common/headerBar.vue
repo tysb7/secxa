@@ -61,12 +61,13 @@ export default {
 .menu {
   color: #ffffff;
   line-height: 30px;
-  font-size: 17px;
+  font-size: 15px;
   margin: 45px 0;
 }
 .menuList{
   color: #ffffff;
   line-height: 30px;
-  font-size: 17px;
+  font-size: 15px;
+  
 }
 </style>
