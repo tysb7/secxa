@@ -98,6 +98,6 @@ export default {
   text-align: left;
   font-size: 14px;
   line-height: 25px;
-  font-weight: 100;
+  
 }
 </style>
