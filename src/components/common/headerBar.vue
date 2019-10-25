@@ -13,7 +13,8 @@
               <div class="grid-content bg-purple">
                 <el-dropdown @command="handleCommand">
                   <span class="el-dropdown-link menuList">
-                    证书选购<i class="el-icon-arrow-down el-icon--right"></i>
+                    证书选购
+                    <i class="el-icon-arrow-down el-icon--right"></i>
                   </span>
                   <el-dropdown-menu slot="dropdown">
                     <el-dropdown-item command="a">黄金糕</el-dropdown-item>
@@ -51,7 +52,7 @@ export default {
 } */
 .headerBar {
   background-image: linear-gradient(to right, #051146, #243a9c);
-    /* position: fixed;
+  /* position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -72,10 +73,9 @@ export default {
   font-size: 15px;
   margin: 45px 0;
 }
-.menuList{
+.menuList {
   color: #ffffff;
   line-height: 30px;
   font-size: 15px;
-  
 }
 </style>
