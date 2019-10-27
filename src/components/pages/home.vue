@@ -11,6 +11,7 @@
         <el-button icon="el-icon-lock" class="bannerBtn">加入SSL</el-button>
       </div>
     </div>
+    <!-- <img src="../../assets/bgBottom.svg" alt=""> -->
     <!-- 主页banner -->
     <!-- productList -->
     <div class="productList">
@@ -220,12 +221,12 @@ export default {
 <style scoped>
 .banner {
   background-image: linear-gradient(to right, #051146, #243a9c);
-  height: 300px;
+  padding: 30px 0;
+  
   /* padding: 50px 0; */
 }
 .bannertext {
   max-width: 1200px;
-  height: 300px;
   margin: auto;
 }
 .bannerTitle {
@@ -236,8 +237,9 @@ export default {
 }
 .bannerInfo {
   color: rgba(229, 235, 255, 0.8);
-  line-height: 100px;
+  line-height: 30px;
   margin: 0;
+  margin-bottom: 50px;
   font-weight: 400;
 }
 .bannerBtn {
@@ -245,7 +247,7 @@ export default {
   color: #ffffff;
   text-align: center;
   display: block;
-  margin: 20px auto 10px;
+  margin: 20px auto 20px;
   width: 120px;
   text-align: center;
   text-decoration: none;
