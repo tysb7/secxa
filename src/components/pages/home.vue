@@ -5,11 +5,15 @@
     <!-- 表头 -->
     <!-- 主页banner -->
     <div class="banner">
-      <div class="bannertext">
-        <h1 class="bannerTitle">世界上最便宜的SSL证书提供商</h1>
-        <h3 class="bannerInfo">我们提供14天免费试用和30天免费退款</h3>
-        <el-button icon="el-icon-lock" class="bannerBtn">加入SSL</el-button>
-      </div>
+      <el-carousel  direction="vertical" :autoplay="true" interval="3000">
+        <el-carousel-item v-for="item in 3" :key="item">
+          <div class="bannertext">
+            <h1 class="bannerTitle">世界上最便宜的SSL证书提供商</h1>
+            <h3 class="bannerInfo">我们提供14天免费试用和30天免费退款</h3>
+            <el-button icon="el-icon-lock" class="bannerBtn">加入SSL</el-button>
+          </div>
+        </el-carousel-item>
+      </el-carousel>
     </div>
     <!-- <img src="../../assets/bgBottom.svg" alt=""> -->
     <!-- 主页banner -->
@@ -121,8 +125,8 @@
       </el-row>
     </div>
     <!-- productList -->
-    <!-- productList -->
-    <div class="productList" style="margin-top:100px;">
+    <!-- why chose secxa -->
+    <div class="productList" style="margin-top:200px;">
       <h1>
         为什么选择环智中诚
         <span style="font-size: 15px;vertical-align: top;">®</span> SSL
@@ -130,32 +134,32 @@
       <h3>选择适合您的HTTPS SSL安全证书将会有助于提升您的网站服务器安全性和促进在线营销</h3>
       <el-row :gutter="20">
         <el-col :span="8">
-          <div class="grid-content bg-purple" style="height:700px;">
+          <div class="grid-content bg-purple" style="height:500px;">
             <div class="whyList">
               <div class="whyListBox">
                 <i class="el-icon-s-check whyListicon"></i>
               </div>
               <div class="whyListTitle">全球顶级CA、可信颁发机构</div>
-              <div
-                class="whyListInfo"
-              >环智中诚
-        <span style="font-size: 15px;vertical-align: top;">®</span>同全球知名证书颁发机构Sectigo(COMODO CA)建立了深入的合作, 为您提供安全可信、兼容性最好的数字安全证书方案。Sectigo也是市场占有率最大的CA颁发机构。</div>
+              <div class="whyListInfo">
+                环智中诚
+                <span style="font-size: 15px;vertical-align: top;">®</span>同全球知名证书颁发机构Sectigo(COMODO CA)建立了深入的合作, 为您提供安全可信、兼容性最好的数字安全证书方案。Sectigo也是市场占有率最大的CA颁发机构。
+              </div>
             </div>
-             <div class="whyList">
+            <div class="whyList">
               <div class="whyListBox">
                 <i class="el-icon-s-platform whyListicon" style="margin-top: 10px;"></i>
               </div>
               <div class="whyListTitle">100%适配兼容</div>
-              <div
-                class="whyListInfo"
-              >环智中诚
-        <span style="font-size: 15px;vertical-align: top;">®</span>通过多个顶级根证书和中级根证书为您签发可在超过全球99%的流行的WEB浏览器和服务器上进行加密保护并完全兼容, 包含了PC桌面端设备、服务器端设备和移动端设备。</div>
+              <div class="whyListInfo">
+                环智中诚
+                <span style="font-size: 15px;vertical-align: top;">®</span>通过多个顶级根证书和中级根证书为您签发可在超过全球99%的流行的WEB浏览器和服务器上进行加密保护并完全兼容, 包含了PC桌面端设备、服务器端设备和移动端设备。
+              </div>
             </div>
           </div>
         </el-col>
         <el-col :span="8">
           <div class="grid-content bg-purple">
-           <span style="color:#fff">1</span>
+            <span style="color:#fff">1</span>
             <img
               class="whyImg1"
               src="https://static.pgyer.com/static-20191022/images/newHome/homepage_tracup_middle_pic2.png"
@@ -170,7 +174,7 @@
         </el-col>
         <el-col :span="8">
           <div class="grid-content bg-purple">
-             <div class="whyList">
+            <div class="whyList">
               <div class="whyListBox whyListBox_">
                 <i class="el-icon-s-custom whyListicon"></i>
               </div>
@@ -179,7 +183,7 @@
                 class="whyListInfo whyListInfo_"
               >依托COMODO CA的全球信任网络, 我们拥有绝对的价格优势和服务经验,旨在为您提供更加本地化，可靠的、可信的企业级数字证书服务。</div>
             </div>
-             <div class="whyList">
+            <div class="whyList">
               <div class="whyListBox whyListBox_">
                 <i class="el-icon-s-comment whyListicon" style="margin-top: 10px;"></i>
               </div>
@@ -192,7 +196,58 @@
         </el-col>
       </el-row>
     </div>
-    <!-- productList -->
+    <!-- why chose secxa -->
+    <!-- our partners -->
+    <div class="productList" style="margin-top:200px;">
+      <h1>
+        他们一直信赖环智中诚
+        <span style="font-size: 15px;vertical-align: top;">®</span>
+      </h1>
+      <h3>选择适合您的HTTPS SSL安全证书将会有助于提升您的网站服务器安全性和促进在线营销</h3>
+      <div class="productListBox">
+        <el-row :gutter="40" style="margin-top:50xp">
+          <el-col :span="4">
+            <img src="../../assets/logo/ck_logo.svg" alt />
+          </el-col>
+          <el-col :span="4">
+            <img src="../../assets/logo/didi_logo.svg" alt />
+          </el-col>
+          <el-col :span="4">
+            <img src="../../assets/logo/fute_logo.svg" alt />
+          </el-col>
+          <el-col :span="4">
+            <img src="../../assets/logo/kl_logo.svg" alt />
+          </el-col>
+          <el-col :span="4">
+            <img src="../../assets/logo/zara_logo.svg" alt />
+          </el-col>
+          <el-col :span="4">
+            <img src="../../assets/logo/msd_logo.svg" alt />
+          </el-col>
+        </el-row>
+        <el-row :gutter="40" style="margin-top:50xp">
+          <el-col :span="4">
+            <img src="../../assets/logo/nokia_logo.svg" alt />
+          </el-col>
+          <el-col :span="4">
+            <img src="../../assets/logo/sx_logo.svg" alt />
+          </el-col>
+          <el-col :span="4">
+            <img src="../../assets/logo/xbk_logo.svg" alt />
+          </el-col>
+          <el-col :span="4">
+            <img src="../../assets/logo/ymx_logo.svg" alt />
+          </el-col>
+          <el-col :span="4">
+            <img src="../../assets/logo/mb_logo.svg" alt />
+          </el-col>
+          <el-col :span="4">
+            <img src="../../assets/logo/bili_logo.svg" alt />
+          </el-col>
+        </el-row>
+      </div>
+    </div>
+    <!-- our partners -->
     <!-- <three-bar></three-bar> -->
     <foot-bar></foot-bar>
   </div>
@@ -219,10 +274,25 @@ export default {
 };
 </script>
 <style scoped>
+/* .el-carousel__item h3 {
+  color: #475669;
+  font-size: 14px;
+  opacity: 0.75;
+  line-height: 200px;
+  margin: 0;
+}
+
+.el-carousel__item:nth-child(2n) {
+  background-color: #99a9bf;
+}
+
+.el-carousel__item:nth-child(2n + 1) {
+  background-color: #d3dce6;
+} */
 .banner {
   background-image: linear-gradient(to right, #051146, #243a9c);
   padding: 30px 0;
-  
+
   /* padding: 50px 0; */
 }
 .bannertext {
@@ -311,7 +381,7 @@ export default {
   background-color: #243a9c;
   float: right;
 }
-.whyListBox_{
+.whyListBox_ {
   float: left;
 }
 .whyList {
@@ -329,7 +399,6 @@ export default {
   text-align: right;
 }
 .whyListTitle_ {
- 
   text-align: left;
 }
 .whyListInfo {
@@ -340,6 +409,6 @@ export default {
   line-height: 1.6;
 }
 .whyListInfo_ {
-   text-align: left;
+  text-align: left;
 }
 </style>
